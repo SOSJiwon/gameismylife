@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>☆★GAMER_WORLD★☆</title>
+    <style>
+        body {
+            background-color: #0000ff; /* 쌩 파란색 배경 */
+            color: #ffff00; /* 노란색 글자 */
+            font-family: "굴림", Gulim, sans-serif;
+            cursor: url('https://cur.cursors-4u.net/games/gam-4/gam382.cur'), auto;
+        }
+
+        /* 번쩍이는 효과 */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 5px 5px #ff0000;
+            margin-top: 50px;
+            border: 10px double #00ff00;
+            padding: 20px;
+        }
+
+        .marquee-container {
+            background-color: #ff00ff;
+            color: white;
+            font-weight: bold;
+            padding: 10px 0;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .box {
+            border: 5px ridge #ffffff;
+            width: 30%;
+            padding: 10px;
+            background-image: linear-gradient(to bottom right, red, yellow);
+            color: black;
+        }
+
+        .blink-text {
+            animation: blink 0.5s infinite;
+            color: #00ffff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 12px;
+        }
+
+        /* 촌스러운 버튼 */
+        .btn-enter {
+            background-color: #00ff00;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border: 5px outset #00ff00;
+            cursor: pointer;
+            padding: 10px 50px;
+        }
+
+        .btn-enter:active {
+            border: 5px inset #00ff00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marquee-container">
+        <marquee scrollamount="15">◈ 환영합니다 ◈ GAME IS MY LIFE... 게임은 나의 "삶" 그 자체... ◈ 접속자 수: 999,999명 ◈</marquee>
+    </div>
+
+    <h1 class="main-title">
+        <span style="color: white;">gAmE</span> is my <span style="font-size: 80px;">LIFE</span>
+    </h1>
+
+    <div class="blink-text">!!! WARNING !!! 게임 중독 주의 !!! WARNING !!!</div>
+
+    <div class="content">
+        <div class="box">
+            <h3>[오늘의 전적]</h3>
+            <ul>
+                <li>승리: 100번</li>
+                <li>패배: 0번 (에러임)</li>
+                <li>랭킹: 세계 1위</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJ6ZnR4bmR4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxVfXEX3u9y/giphy.gif" width="200" alt="레트로 게임">
+            <br><br>
+            <button class="btn-enter" onclick="alert('게임 시작!!!')">GAME START</button>
+        </div>
+
+        <div class="box">
+            <h3>[방명록]</h3>
+            <p>ㄴr는 오늘도... 겜을 한ㄷr...</p>
+            <p>게임 없는 세상은 "지옥"일 뿐</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright (c) 2026 GameIsLife Corp. All rights reserved.</p>
+        <p>이 페이지는 Internet Explorer 6.0에 최적화되어 있지 않습니다.</p>
+    </div>
+
+</body>
+</html>
